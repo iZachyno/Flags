@@ -11,6 +11,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
+
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1083.0" style="-fx-background-color: #f1f1f1;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.uipalettes.Flag">
    <top>
       <Button fx:id="btnBack" mnemonicParsing="false" onAction="#goBack" style="-fx-background-color: #11111115; -fx-border-color: #111; -fx-background-radius: 8px; -fx-border-radius: 8px;" text="&lt;&lt; Go Back" BorderPane.alignment="CENTER">

@@ -266,6 +266,7 @@ public class MainController implements Initializable {
                     if(mouseEvent.getClickCount() == 2){
                         try
                         {
+
                             FXMLLoader fxmlLoader = new FXMLLoader();
                             fxmlLoader.setLocation(getClass().getResource("flag.fxml"));
                             BorderPane BP = fxmlLoader.load();

@@ -2,6 +2,7 @@ package Flag;
 
 public class FlagCard
 {
+
     String fileName;
     double fileSize;
 

@@ -71,7 +71,7 @@
          </center></BorderPane>
    </center>
    <top>
-      <BorderPane fx:id="titleBar" onDragDetected="#onDrag" prefHeight="26.0" prefWidth="1173.0" style="-fx-background-color: #212121; -fx-border-color: #313131;" BorderPane.alignment="CENTER">
+      <BorderPane fx:id="titleBar" onDragDetected="#onDrag" prefHeight="26.0" prefWidth="1173.0" style="-fx-background-color: #212121; -fx-border-color: #313133;" BorderPane.alignment="CENTER">
          <left>
             <MenuBar id="menuB" fx:id="menuBar" onDragDetected="#onDrag" style="-fx-background-color: #212121; -fx-text-fill: white;" stylesheets="@Menu%20Css.css" BorderPane.alignment="CENTER">
                <menus>
