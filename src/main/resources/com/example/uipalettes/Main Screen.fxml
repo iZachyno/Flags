@@ -30,7 +30,7 @@
                      <AnchorPane prefHeight="73.0" prefWidth="161.0">
                         <ImageView fitHeight="75.0" fitWidth="92.0" layoutX="5.0" opacity="0.59" pickOnBounds="true"
                                    preserveRatio="true">
-                           <Image/>
+                           <Image url="@Pennant%201.png"/>
                         </ImageView>
                      </AnchorPane>
                      <Button fx:id="handToolBtn" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#handTool"
