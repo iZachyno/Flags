@@ -27,27 +27,28 @@
             <BorderPane prefHeight="720.0" prefWidth="266.0" BorderPane.alignment="CENTER">
                <center>
                   <VBox prefHeight="690.0" prefWidth="192.0" BorderPane.alignment="CENTER">
-                     <children>
-                        <AnchorPane prefHeight="73.0" prefWidth="161.0">
-                           <children>
-                              <ImageView fitHeight="75.0" fitWidth="92.0" layoutX="5.0" opacity="0.59" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@Pennant%201.png" />
-                                 </image>
-                              </ImageView>
-                           </children>
-                        </AnchorPane>
-                        <Button fx:id="handToolBtn" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#handTool" onMouseEntered="#handToolIn" onMouseExited="#handToolOut" prefHeight="25.0" prefWidth="327.0" style="-fx-background-color: transparent;" text="Hand Tool" textFill="#909090">
-                           <cursor>
-                              <Cursor fx:constant="HAND" />
-                           </cursor>
-                        </Button>
-                        <Button fx:id="eyeDropperBtn" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#handTool" onMouseEntered="#eyeDropperIn" onMouseExited="#eyeDropperOut" prefHeight="25.0" prefWidth="350.0" style="-fx-background-color: transparent;" text="Eye Dropper Tool" textFill="#909090">
-                           <cursor>
-                              <Cursor fx:constant="HAND" />
-                           </cursor>
-                        </Button>
-                     </children>
+                     <AnchorPane prefHeight="73.0" prefWidth="161.0">
+                        <ImageView fitHeight="75.0" fitWidth="92.0" layoutX="5.0" opacity="0.59" pickOnBounds="true"
+                                   preserveRatio="true">
+                           <Image/>
+                        </ImageView>
+                     </AnchorPane>
+                     <Button fx:id="handToolBtn" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#handTool"
+                             onMouseEntered="#handToolIn" onMouseExited="#handToolOut" prefHeight="25.0"
+                             prefWidth="327.0" style="-fx-background-color: transparent;" text="Hand Tool"
+                             textFill="#909090">
+                        <cursor>
+                           <Cursor fx:constant="HAND"/>
+                        </cursor>
+                     </Button>
+                     <Button fx:id="eyeDropperBtn" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#handTool"
+                             onMouseEntered="#eyeDropperIn" onMouseExited="#eyeDropperOut" prefHeight="25.0"
+                             prefWidth="350.0" style="-fx-background-color: transparent;" text="Eye Dropper Tool"
+                             textFill="#909090">
+                        <cursor>
+                           <Cursor fx:constant="HAND"/>
+                        </cursor>
+                     </Button>
                   </VBox>
                </center>
                <BorderPane.margin>
@@ -59,68 +60,64 @@
             </BorderPane>
          </left>
          <center>
-            <ScrollPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: transparent; -fx-border-color: transparent;" BorderPane.alignment="CENTER">
-               <content>
-                  <TilePane fx:id="canvas" hgap="8.0" prefHeight="720.0" prefWidth="1083.0" style="-fx-background-color: #333;" vgap="8.0">
-                     <padding>
-                        <Insets bottom="8.0" left="15.0" right="15.0" top="8.0" />
-                     </padding>
-                  </TilePane>
-               </content>
+            <ScrollPane prefHeight="200.0" prefWidth="200.0"
+                        style="-fx-background-color: transparent; -fx-border-color: transparent;"
+                        BorderPane.alignment="CENTER">
+               <TilePane fx:id="canvas" hgap="8.0" prefHeight="720.0" prefWidth="1083.0"
+                         style="-fx-background-color: #333;" vgap="8.0">
+                  <padding>
+                     <Insets bottom="8.0" left="15.0" right="15.0" top="8.0"/>
+                  </padding>
+               </TilePane>
             </ScrollPane>
          </center></BorderPane>
    </center>
    <top>
       <BorderPane fx:id="titleBar" onDragDetected="#onDrag" prefHeight="26.0" prefWidth="1173.0" style="-fx-background-color: #212121; -fx-border-color: #313133;" BorderPane.alignment="CENTER">
          <left>
-            <MenuBar id="menuB" fx:id="menuBar" onDragDetected="#onDrag" style="-fx-background-color: #212121; -fx-text-fill: white;" stylesheets="@Menu%20Css.css" BorderPane.alignment="CENTER">
-               <menus>
-                  <Menu id="menu" mnemonicParsing="false" style="-fx-text-fill: white;">
-                     <items>
-                        <MenuItem id="menuI" mnemonicParsing="false" onAction="#fExit" style="-fx-text-fill: white" text="Close" />
-                     </items>
-                     <graphic>
-                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="File" textAlignment="CENTER">
-                           <font>
-                              <Font name="Segoe UI" size="12.0" />
-                           </font>
-                        </Text>
-                     </graphic>
-                  </Menu>
-                  <Menu mnemonicParsing="false">
-                     <items>
-                        <MenuItem mnemonicParsing="false" text="Delete" />
-                     </items>
-                     <graphic>
-                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Edit" textAlignment="CENTER">
-                           <font>
-                              <Font name="Segoe UI" size="12.0" />
-                           </font>
-                        </Text>
-                     </graphic>
-                  </Menu>
-                  <Menu mnemonicParsing="false">
-                     <items>
-                        <MenuItem mnemonicParsing="false" text="About" />
-                     </items>
-                     <graphic>
-                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="About" textAlignment="CENTER">
-                           <font>
-                              <Font name="Segoe UI" size="12.0" />
-                           </font>
-                        </Text>
-                     </graphic>
-                  </Menu>
-               </menus>
+            <MenuBar id="menuB" fx:id="menuBar" onDragDetected="#onDrag"
+                     style="-fx-background-color: #212121; -fx-text-fill: white;" BorderPane.alignment="CENTER">
+               <Menu id="menu" mnemonicParsing="false" style="-fx-text-fill: white;">
+                  <graphic>
+                     <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="File" textAlignment="CENTER">
+                        <font>
+                           <Font name="Segoe UI" size="12.0"/>
+                        </font>
+                     </Text>
+                  </graphic>
+                  <MenuItem id="menuI" mnemonicParsing="false" onAction="#fExit" style="-fx-text-fill: white"
+                            text="Close"/>
+               </Menu>
+               <Menu mnemonicParsing="false">
+                  <graphic>
+                     <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Edit" textAlignment="CENTER">
+                        <font>
+                           <Font name="Segoe UI" size="12.0"/>
+                        </font>
+                     </Text>
+                  </graphic>
+                  <MenuItem mnemonicParsing="false" text="Delete"/>
+               </Menu>
+               <Menu mnemonicParsing="false">
+                  <graphic>
+                     <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="About" textAlignment="CENTER">
+                        <font>
+                           <Font name="Segoe UI" size="12.0"/>
+                        </font>
+                     </Text>
+                  </graphic>
+                  <MenuItem mnemonicParsing="false" text="About"/>
+               </Menu>
             </MenuBar>
          </left>
          <right>
             <HBox prefHeight="100.0" prefWidth="84.0" BorderPane.alignment="CENTER">
-               <children>
-                  <Button fx:id="btnMin" mnemonicParsing="false" onAction="#min" onMouseEntered="#onMinIn" onMouseExited="#onMinOut" style="-fx-background-color: transparent;" text="-" textFill="WHITE" />
-                  <Button fx:id="btnMax" mnemonicParsing="false" onAction="#max" onMouseEntered="#onMaxIn" onMouseExited="#onMaxOut" style="-fx-background-color: transparent;" text="○" textFill="WHITE" />
-                  <Button fx:id="btnExit" mnemonicParsing="false" onAction="#exit" onMouseEntered="#onExitIn" onMouseExited="#onExitOut" style="-fx-background-color: transparent;" text="X" textFill="WHITE" />
-               </children>
+               <Button fx:id="btnMin" mnemonicParsing="false" onAction="#min" onMouseEntered="#onMinIn"
+                       onMouseExited="#onMinOut" style="-fx-background-color: transparent;" text="-" textFill="WHITE"/>
+               <Button fx:id="btnMax" mnemonicParsing="false" onAction="#max" onMouseEntered="#onMaxIn"
+                       onMouseExited="#onMaxOut" style="-fx-background-color: transparent;" text="○" textFill="WHITE"/>
+               <Button fx:id="btnExit" mnemonicParsing="false" onAction="#exit" onMouseEntered="#onExitIn"
+                       onMouseExited="#onExitOut" style="-fx-background-color: transparent;" text="X" textFill="WHITE"/>
             </HBox>
          </right>
       </BorderPane>
